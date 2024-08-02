@@ -450,6 +450,42 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
+      propertyPath: Name
+      value: Lisa
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
+      propertyPath: needs.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
+      propertyPath: needs.Array.data[1].needType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
+      propertyPath: needs.Array.data[2].needType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
+      propertyPath: needs.Array.data[3].needType
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
+      propertyPath: needs.Array.data[4].needType
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
+      propertyPath: needs.Array.data[5].needType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
+      propertyPath: needs.Array.data[6].needType
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
+      propertyPath: needs.Array.data[7].needType
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 7509912388343884877, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.9516901
@@ -506,6 +542,42 @@ PrefabInstance:
     - target: {fileID: 2989624381908035165, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
       propertyPath: m_Name
       value: Character
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
+      propertyPath: Name
+      value: Stephanie
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
+      propertyPath: needs.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
+      propertyPath: needs.Array.data[1].needType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
+      propertyPath: needs.Array.data[2].needType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
+      propertyPath: needs.Array.data[3].needType
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
+      propertyPath: needs.Array.data[4].needType
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
+      propertyPath: needs.Array.data[5].needType
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
+      propertyPath: needs.Array.data[6].needType
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
+      propertyPath: needs.Array.data[7].needType
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7509912388343884877, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
       propertyPath: m_LocalPosition.x

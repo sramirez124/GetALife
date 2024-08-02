@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using CharacterSystem;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
@@ -9,6 +11,7 @@ public class MoveCharacterInput : MonoBehaviour
 {
     [SerializeField] NavMeshAgent agent;
     [SerializeField] Camera mainCamera;
+    [SerializeField] TextMeshProUGUI characterName;
 
     // Update is called once per frame
     void Update()
@@ -24,6 +27,7 @@ public class MoveCharacterInput : MonoBehaviour
                 if (newAgent != null)
                 {
                     agent = newAgent;
+                    characterName.text = newAgent.GetComponent<Character>().Name;
                 }
             }
         }

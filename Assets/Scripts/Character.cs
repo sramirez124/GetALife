@@ -1,18 +1,49 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Character : MonoBehaviour
+namespace CharacterSystem
 {
-    // Start is called before the first frame update
-    void Start()
+    [Serializable]
+    public class NeedsContainer
     {
-        
+        public float state;
+        public Needs needType;
+
+        public NeedsContainer(Needs needs)
+        {
+            needType = needs;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public enum Needs
     {
-        
+        Hunger,
+        Thirst,
+        Bladder,
+        Hygiene,
+        Fun,
+        Energy,
+        Social,
+        Room
+    }
+    public class Character : MonoBehaviour
+    {
+        public string Name;
+
+        public List<NeedsContainer> needs;
+
+        public const int CharacterNeedsCount = 8;
+
+        [ContextMenu("Initialize Needs List")]
+        public void InitNeeds()
+        {
+            needs = new List<NeedsContainer>();
+            for (int i = 0; i < CharacterNeedsCount; i++)
+            {
+                needs.Add(new NeedsContainer((Needs)i));
+            }
+        }
     }
 }
