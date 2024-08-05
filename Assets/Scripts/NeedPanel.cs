@@ -7,7 +7,7 @@ using UnityEngine;
 public class NeedPanel : MonoBehaviour
 {
     [SerializeField] List<NeedsUIElement> children;
-    [SerializeField] Character testCharacter;
+    Character character;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +17,13 @@ public class NeedPanel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UpdatePanel(testCharacter);
+        if (character == null) { return; }
+        UpdatePanel(character);
+    }
+
+    public void SelectCharacter(Character character)
+    {
+        this.character = character;
     }
 
     private void UpdatePanel(Character testCharacter)

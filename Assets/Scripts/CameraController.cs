@@ -40,7 +40,7 @@ public class CameraController : MonoBehaviour
 
     private void Start()
     {
-        //targetFOV = virtualCamera.m_Lens.FieldOfView;
+        targetFOV = virtualCamera.m_Lens.FieldOfView;
     }
 
     // Update is called once per frame

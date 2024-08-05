@@ -121,7 +121,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: d8adcac572cb13442a3122e7230cfbb9, type: 2}
 --- !u!1 &54436419
 GameObject:
   m_ObjectHideFlags: 0
@@ -459,6 +459,38 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
+      propertyPath: needs.Array.data[0].state
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
+      propertyPath: needs.Array.data[1].state
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
+      propertyPath: needs.Array.data[2].state
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
+      propertyPath: needs.Array.data[3].state
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
+      propertyPath: needs.Array.data[4].state
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
+      propertyPath: needs.Array.data[5].state
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
+      propertyPath: needs.Array.data[6].state
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
+      propertyPath: needs.Array.data[7].state
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
       propertyPath: needs.Array.data[1].needType
       value: 1
       objectReference: {fileID: 0}
@@ -544,40 +576,36 @@ PrefabInstance:
       value: Character
       objectReference: {fileID: 0}
     - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
-      propertyPath: Name
-      value: Stephanie
+      propertyPath: needs.Array.data[0].state
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
-      propertyPath: needs.Array.size
-      value: 8
+      propertyPath: needs.Array.data[1].state
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
-      propertyPath: needs.Array.data[1].needType
-      value: 1
+      propertyPath: needs.Array.data[2].state
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
-      propertyPath: needs.Array.data[2].needType
-      value: 2
+      propertyPath: needs.Array.data[3].state
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
-      propertyPath: needs.Array.data[3].needType
-      value: 3
+      propertyPath: needs.Array.data[4].state
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
-      propertyPath: needs.Array.data[4].needType
-      value: 4
+      propertyPath: needs.Array.data[5].state
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
-      propertyPath: needs.Array.data[5].needType
-      value: 5
+      propertyPath: needs.Array.data[6].state
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
-      propertyPath: needs.Array.data[6].needType
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4973950920998915445, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
-      propertyPath: needs.Array.data[7].needType
-      value: 7
+      propertyPath: needs.Array.data[7].state
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7509912388343884877, guid: 962eb7c5f2f8302429e494c68daa358b, type: 3}
       propertyPath: m_LocalPosition.x

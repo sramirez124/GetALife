@@ -71,6 +71,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efe8fd800afb2264d95ab4e593acdd59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Name: Stephanie
+  needs:
+  - state: 0
+    needType: 0
+    decayRate: 0.25
+    satisfactionRate: 0
+  - state: 0
+    needType: 1
+    decayRate: 0.25
+    satisfactionRate: 0
+  - state: 0
+    needType: 2
+    decayRate: 0.25
+    satisfactionRate: 0
+  - state: 0
+    needType: 3
+    decayRate: 0.25
+    satisfactionRate: 0
+  - state: 0
+    needType: 4
+    decayRate: 0.25
+    satisfactionRate: 0
+  - state: 0
+    needType: 5
+    decayRate: 0.25
+    satisfactionRate: 0
+  - state: 0
+    needType: 6
+    decayRate: 0.25
+    satisfactionRate: 0
+  - state: 0
+    needType: 7
+    decayRate: 0.25
+    satisfactionRate: 0
 --- !u!114 &2963971017346108476
 MonoBehaviour:
   m_ObjectHideFlags: 0
