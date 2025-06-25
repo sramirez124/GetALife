@@ -54,7 +54,7 @@ namespace CharacterSystem
 
         public List<NeedsContainer> needs;
 
-        public const int CharacterNeedsCount = 8;
+        private const int CharacterNeedsCount = 8;
 
         [ContextMenu("Initialize Needs List")]
         public void InitNeeds()
