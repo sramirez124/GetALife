@@ -9,6 +9,7 @@ using UnityEngine;
 public class StatRefill : MonoBehaviour
 {
     public Needs Needs;
+    [Range(0f, 100f)]
     public float Amount;
 
     void Start()
@@ -16,28 +17,20 @@ public class StatRefill : MonoBehaviour
         switch (Needs)
         {
             case Needs.Hunger:
-                Amount = 0.25f;
                 break;
             case Needs.Thirst:
-                Amount = 0.25f;
                 break;
             case Needs.Bladder:
-                Amount = 0.25f;
                 break;
             case Needs.Hygiene:
-                Amount = 0.25f;
                 break;
             case Needs.Fun:
-                Amount = 0.25f;
                 break;
             case Needs.Energy:
-                Amount = 0.25f;
                 break;
             case Needs.Social:
-                Amount = 0.25f;
                 break;
             case Needs.Room:
-                Amount = 0.25f;
                 break;
         }
 
