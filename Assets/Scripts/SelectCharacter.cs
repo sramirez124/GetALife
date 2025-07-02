@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
+using Cinemachine;
+using UnityEditor;
 
 public class SelectCharacter : MonoBehaviour
 {
@@ -12,11 +14,12 @@ public class SelectCharacter : MonoBehaviour
     [SerializeField] TextMeshProUGUI characterName;
     [SerializeField] CharacterMarker characterMarker;
     [SerializeField] NeedPanel needPanel;
-    
+    [SerializeField] GameObject pivot;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -39,5 +42,7 @@ public class SelectCharacter : MonoBehaviour
                 }
             }
         }
+
+        pivot.transform.position = selectedCharacter.transform.position;
     }
 }

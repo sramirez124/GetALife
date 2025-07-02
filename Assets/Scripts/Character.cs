@@ -83,7 +83,7 @@ namespace CharacterSystem
             }
         }
 
-        public void OnMouseDown()
+        private void OnMouseDown()
         {
             if (Input.GetMouseButtonDown(0))
             {

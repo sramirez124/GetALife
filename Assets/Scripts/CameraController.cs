@@ -40,7 +40,7 @@ public class CameraController : MonoBehaviour
 
     private void Start()
     {
-        targetFOV = virtualCamera.m_Lens.FieldOfView;
+        // targetFOV = virtualCamera.m_Lens.FieldOfView;
     }
 
     // Update is called once per frame
@@ -53,9 +53,20 @@ public class CameraController : MonoBehaviour
 
     private void Zoom()
     {
-        targetFOV += zoomInput * zoomSensitivity;
-        targetFOV = Mathf.Clamp(targetFOV, minPOV, maxPOV);
-        virtualCamera.m_Lens.FieldOfView = targetFOV;
+        if (Input.GetAxisRaw("Mouse ScrollWheel") != 0)
+        {
+            targetFOV += zoomInput * zoomSensitivity;
+            targetFOV = Mathf.Clamp(targetFOV, minPOV, maxPOV);
+            virtualCamera.m_Lens.FieldOfView = targetFOV;
+        }
+        else
+        {
+            targetFOV -= zoomInput * zoomSensitivity;
+            targetFOV = Mathf.Clamp(targetFOV, minPOV, maxPOV);
+            virtualCamera.m_Lens.FieldOfView = targetFOV;
+
+        }
+
     }
 
     private void RotateCamera()
