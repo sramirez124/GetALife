@@ -40,25 +40,17 @@ public class StatRefill : MonoBehaviour
 
     }
 
-    public IEnumerator StatRefillTimer(Character character)
-    {
-        while (true)
-        {
-            StartCoroutine(Refill(character));
-            Debug.Log("Timer has started");
-            yield return new WaitForSeconds(Time + 0.1f);
-            Destroy(this.gameObject);
-            StopAllCoroutines();
-            
-        }
-    }
 
-    IEnumerator Refill(Character character)
+    public IEnumerator Refill(Character character)
     {
         switch (Needs)
         {
             case Needs.Hunger:
                 character.needs[0].satisfactionRate += Amount;
+                character.needs[0].decayRate = 0f;
+                yield return new WaitForSeconds(Time);
+                character.needs[0].decayRate = 0.25f;
+                character.needs[0].satisfactionRate = 0f;
                 break;
             case Needs.Thirst:
                 character.needs[1].satisfactionRate += Amount;
@@ -69,21 +61,45 @@ public class StatRefill : MonoBehaviour
                 break;
             case Needs.Bladder:
                 character.needs[2].satisfactionRate += Amount;
+                character.needs[2].decayRate = 0f;
+                yield return new WaitForSeconds(Time);
+                character.needs[2].decayRate = 0.25f;
+                character.needs[2].satisfactionRate = 0f;
                 break;
             case Needs.Hygiene:
                 character.needs[3].satisfactionRate += Amount;
+                character.needs[3].decayRate = 0f;
+                yield return new WaitForSeconds(Time);
+                character.needs[3].decayRate = 0.25f;
+                character.needs[3].satisfactionRate = 0f;
                 break;
             case Needs.Fun:
                 character.needs[4].satisfactionRate += Amount;
+                character.needs[4].decayRate = 0f;
+                yield return new WaitForSeconds(Time);
+                character.needs[4].decayRate = 0.25f;
+                character.needs[4].satisfactionRate = 0f;
                 break;
             case Needs.Energy:
                 character.needs[5].satisfactionRate += Amount;
+                character.needs[5].decayRate = 0f;
+                yield return new WaitForSeconds(Time);
+                character.needs[5].decayRate = 0.25f;
+                character.needs[5].satisfactionRate = 0f;
                 break;
             case Needs.Social:
                 character.needs[6].satisfactionRate += Amount;
+                character.needs[6].decayRate = 0f;
+                yield return new WaitForSeconds(Time);
+                character.needs[6].decayRate = 0.25f;
+                character.needs[6].satisfactionRate = 0f;
                 break;
             case Needs.Room:
                 character.needs[7].satisfactionRate += Amount;
+                character.needs[7].decayRate = 0f;
+                yield return new WaitForSeconds(Time);
+                character.needs[7].decayRate = 0.25f;
+                character.needs[7].satisfactionRate = 0f;
                 break;
         }
         yield return null;

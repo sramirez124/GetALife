@@ -93,8 +93,8 @@ namespace CharacterSystem
                 {
                     if (hit.transform.tag == "StatRefill")
                     {
-                        StartCoroutine(hit.transform.GetComponent<StatRefill>().StatRefillTimer(this));
-                        StopAllCoroutines(); ;
+                        StartCoroutine(hit.transform.GetComponent<StatRefill>().Refill(this));
+                        Debug.Log("Corountine Started");
                     }
                 }
             }
