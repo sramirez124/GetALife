@@ -14,6 +14,8 @@ public class StatRefill : MonoBehaviour
     [Range(0f, 100f)]
     public float Amount;
 
+    public float Time;
+
     void Start()
     {
         switch (Needs)
@@ -38,7 +40,20 @@ public class StatRefill : MonoBehaviour
 
     }
 
-    public void Refill(Character character)
+    public IEnumerator StatRefillTimer(Character character)
+    {
+        while (true)
+        {
+            StartCoroutine(Refill(character));
+            Debug.Log("Timer has started");
+            yield return new WaitForSeconds(Time + 0.1f);
+            Destroy(this.gameObject);
+            StopAllCoroutines();
+            
+        }
+    }
+
+    IEnumerator Refill(Character character)
     {
         switch (Needs)
         {
@@ -47,6 +62,10 @@ public class StatRefill : MonoBehaviour
                 break;
             case Needs.Thirst:
                 character.needs[1].satisfactionRate += Amount;
+                character.needs[1].decayRate = 0f;
+                yield return new WaitForSeconds(Time);
+                character.needs[1].decayRate = 0.25f;
+                character.needs[1].satisfactionRate = 0f;
                 break;
             case Needs.Bladder:
                 character.needs[2].satisfactionRate += Amount;
@@ -67,6 +86,7 @@ public class StatRefill : MonoBehaviour
                 character.needs[7].satisfactionRate += Amount;
                 break;
         }
+        yield return null;
     }
 }
 
@@ -81,6 +101,8 @@ public enum Needs
     Social,
     Room
 }
+
+
 
 
 

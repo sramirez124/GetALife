@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace CharacterSystem
@@ -68,15 +69,34 @@ namespace CharacterSystem
 
         public void Update()
         {
-            ProcessNeeds();    
+            ProcessNeeds();
+            OnMouseDown();
         }
+
 
         private void ProcessNeeds()
         {
-            for(int i = 0; i < needs.Count; i++)
+            for (int i = 0; i < needs.Count; i++)
             {
                 needs[i].Decay();
                 needs[i].Satisfaction();
+            }
+        }
+
+        public void OnMouseDown()
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                RaycastHit hit;
+                if (Physics.Raycast(ray, out hit))
+                {
+                    if (hit.transform.tag == "StatRefill")
+                    {
+                        StartCoroutine(hit.transform.GetComponent<StatRefill>().StatRefillTimer(this));
+                        StopAllCoroutines(); ;
+                    }
+                }
             }
         }
     }
